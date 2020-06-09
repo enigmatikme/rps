@@ -1,0 +1,32 @@
+html {
+  /* 1rem = 10px */
+  font-size: 62.5%;
+
+}
+.header {
+  color: orangered;
+}
+
+h3 {
+  font-size: 6rem;
+}
+
+.btn {
+  width: 8rem;
+  height: 8rem;
+  border-radius: 50%;
+
+  
+}
+
+.btn:active {
+  outline: none;
+}
+
+.hand {
+  font-size: 6rem;
+}
+
+.result {
+  font-size: 6rem;
+}
