@@ -11,19 +11,50 @@
 <body>
   
   <div class="app">
-    <h1 class="header">FINE ANDREW </h1>
-    <main class="flex_container">
+    <h1 class="header">May the odds be ever in your favor</h1>
+    <img class="svg" src="./img/scissors.svg" alt="Scissors image">
+    <svg class="user-nav__icon">
+      <use xlink:href="./img/sprite.svg#icon-scissors"></use>
+    </svg>
+    <svg class="search__icon">
+      <use xlink:href="img/sprite.svg#icon-magnifying-glass"></use>
+  </svg>
+    <main class="container">
       <div class="scoreboard">
-
+        <table>
+          <thead>
+            <tr>
+              <th>Games</th>
+              <th>Player 1</th>
+              <th>Bot</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="r_1">
+              <td>Round 1</td>
+              <td class="pl_score"></td>
+              <td class="bot_score"></td>
+            </tr>
+            <tr class="r_2">
+              <td>Round 2</td>
+              <td class="pl_score"></td>
+              <td class="bot_score"></td>
+            </tr>
+            <tr class="r_3">
+              <td>Round 3</td>
+              <td class="pl_score"></td>
+              <td class="bot_score"></td>
+            </tr>
+          </tbody>
+        </table>
       </div>
       <div class="game_container">
-        <div class="player">
+        <div class="choices">
           <input class="btn player_input" type="button" value="Rock" /> 
           <input class="btn player_input" type="button" value="Scissors" /> 
           <input class="btn player_input" type="button" value="Paper" /> 
         </div>
-        <div class="timer">
-
+        <div class="player">
         </div>
         <div class="bot">
 

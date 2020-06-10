@@ -20,15 +20,16 @@
 
 
   //params will be strings
-  // const winnerChecker = (player1Hand, bot) => {
-    function winnerChecker(player1Hand, bot) {
-    // let bot = hands[randomPlayerHand(3)];
-    // let printBot = hands[bot];
+  const winnerChecker = (player1Hand, bot) => {
+    // function winnerChecker(player1Hand, bot) {
+      let playerScore = $(`.r_${round}`).find('.pl_score');
+      let botScore = $(`.r_${round}`).find('.bot_score');
+      
     $(".hand").remove();
     $("h3").remove();
     $(".result").remove();
+
     let botWinningHand = handsID[player1Hand];
-    console.log("Player 1: ", player1Hand, "BOT: ", bot)
     if (bot === player1Hand) {
       console.log("Tie, rematch!");
       $(".game_container").append(`<h3>Tie! Rematch</h3>`);
@@ -42,7 +43,8 @@
 
       $(".player").append(`<p class="hand">${player1Hand}</p>`);
       $(".bot").append(`<p class="hand">${bot}</p>`);
-      
+      playerScore.html('&#10003;')
+      botScore.html('&#9675;')
     } else {
       console.log("bot wins");
       $(".round_result").append(`<p class="result">Bot Wins!</p>`);
@@ -50,8 +52,10 @@
       $(".player").append(`<p class="hand">${player1Hand}</p>`);
       
       $(".bot").append(`<p class="hand">${bot}</p>`);
+      playerScore.html('&#9675;')
+      botScore.html('&#10003;')
     }
-
+    round ++;
     return;
 
   }
