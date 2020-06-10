@@ -26,17 +26,6 @@ h3 {
   font-size: 6rem;
 }
 
-.btn {
-  width: 8rem;
-  height: 8rem;
-  border-radius: 50%;
-
-}
-
-.btn:active, .btn:focus {
-  outline: none;
-}
-
 .hand {
   font-size: 6rem;
   width: 26rem;
@@ -70,28 +59,30 @@ td, th {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 0 2rem;
+  margin: 0 4rem;
   position: relative;
 }
 
 .player {
-  width: 63rem;
+  width: 100%;
   height: 50%;
   background-color: orangered;
   padding: -3rem;
   margin: 0;
-  border: solid black 1px;
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .bot {
-  width: 63rem;
+  width: 100%;
   height: 50%;
   background-color: purple;
   padding: -3rem;
   margin: 0;
-  border: solid black 1px;
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .choices {
@@ -99,16 +90,26 @@ td, th {
   top: -2.6rem;
 }
 
-.svg {
-  fill: blue;
+.btn {
+  width: 8rem;
+  height: 8rem;
+  border-radius: 50%;
+  border: 0;
+  box-shadow: 10px 5px 5px black;
 }
 
+.btn:active, .btn:focus {
+  outline: none;
+}
 .user-nav__icon {
   height: 2.25rem;
   width: 2.25rem;
 }
 
 .search__icon {
-  height: 2.25rem;
-  width: 2.25rem;
+  width: 12rem;
+  height: 12rem;
 }
+
+/* box-shadow: $shadow-1;
+    //[x axis, y axis, blur, color/opacity */
